@@ -4,8 +4,7 @@ body {
 }
 
  
-h1 {
-	 	  
+h1 {	  
 	color:#333;
 	font-weight:700;
 	margin-top:125px;	 
@@ -20,7 +19,7 @@ h1 {
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
-	flex-direction: column;
+	display: block;
 }
 
 #progress-bar-container {
@@ -56,7 +55,6 @@ h1 {
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
 	border:solid 3px #000000;
 	background-color: red;
-       	 
 	/* background: linear-gradient(to right, red 0%,#fff 100%);  */
 }
 
