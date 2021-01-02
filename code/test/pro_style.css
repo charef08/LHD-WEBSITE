@@ -20,6 +20,7 @@ h1 {
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
+	flex-direction: column;
 }
 
 #progress-bar-container {
