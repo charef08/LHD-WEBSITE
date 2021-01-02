@@ -1,0 +1,246 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom left, #002BFF , #BF31E3, #FF8000, #F91F1F, #FF6868, #DDDD30 );
+}
+nav{
+  /* overflow: hidden;
+  position: fixed;
+  top: 0; */
+  background: #FF2912;
+  height: 50px;
+  width: 100%;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 3px;
+}
+label.logo{
+  color: #000000;
+  font-size: 25px;
+  line-height: 40px;
+  padding: 0 30px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #000000;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a:hover{
+  background: #000000;
+  color: #ffffff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 20px;
+  color: #000000;
+  float: right;
+  line-height: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    /* top: 80px; */
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #ffffff;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #FF2912;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+section{
+  /* justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 100%; */
+  /* display: flex; */
+  padding-top: 60px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height:1000px;
+}
+
+/* SECTION 1 : INFOS ABOUT THE EVENT  */
+.section1{
+  /* height: fit-content;  */
+  overflow: hidden;
+  height: 200px;
+  width: 80%;
+  background-color: #ffffff;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 40px;
+  margin-left: 10%;
+  /* position: relative; */
+}
+
+.section1 .slider{
+  height: 80%;
+  width: 80%;
+}
+
+.section1 .slider img{
+  height: 100%;
+  width: 100%;
+}
+
+.sliders{
+  /* position: absolute;
+  top: 50%; */
+  transform: translateY(-50%);
+  width: 45px;
+  cursor: pointer;
+  border: 2px solid white;
+  background: rgba(255,255,255,0.1);
+}
+.sliders:hover{
+  background: rgba(255,255,255,0.2);
+}
+.right{
+  right: 0;
+}
+.sliders span{
+  line-height: 41px;
+  font-size: 35px;
+  color: red;
+}
+
+/* SECTION 3 : TIMELINE D'INSCRIPTION */
+.section3{
+  width: 80%;
+  background-color: #ffffff;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 40px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timeline{
+  width:100;
+  background-color: #ffffff;
+}
+
+.timeline .swiper-container{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.timeline .swiper-wrapper{
+  transition: 2s cubic-bezier(0.59, -0.4, 0.27, 1.34) 0.2s;
+}
+
+.timeline .swiper-slide{
+  position: relative;
+  color: #000000;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.timeline .swiper-slide::after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: -115%;
+  bottom: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,0.7);
+  border-radius: 100%;
+}
+
+.timeline .swiper-slide .timeline-year{
+  display: block;
+  font-size: 22px !important;
+  margin-bottom: 50px;
+  transform: translate3d(20px, 0, 0);
+  /* color: orange; */
+  font-size: italic;
+  font-weight: 300;
+  opacity: 0;
+  transition: 0.2s ease 0.4s;
+}
+
+.timeline .swiper-slide .timeline-title{
+  font-weight: 800;
+  font-size: 54px;
+  margin:  0 0 30px;
+  opacity: 0;
+  transform: translate3d(20px,0 ,0);
+  transition: 0.2s ease 0.5s;
+}
+
+.timeline .swiper-slide .timeline-text{
+  line-height: 1.8;
+  opacity: 0;
+  transform: translate3d(20px,0 ,0);
+  transition: 0.2s ease 0.7s;
+  font-size: 14px;
+
+}
+
+
