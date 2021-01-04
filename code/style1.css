@@ -1,7 +1,19 @@
 .box{
     height: 60px;
 }
+.txt{
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: medium;
+}
+
+.title{
+    font-family: 'Bungee', cursive;
+    font-size: large;
+}
 h1{
+    font-family: 'Bungee', cursive;
     margin-top: 60px;
     text-align: center;
     font-weight: bold;
@@ -26,10 +38,11 @@ body{
 }
 .text-costum{
     color: #000000;
+    font-weight: bold;
 }
 .text-costum:hover{
+    font-family: 'Bungee', cursive;
     color: #000000;
-    font-weight: bold;
 }
 .section1{
     height: fit-content;
@@ -46,7 +59,7 @@ body{
     padding-bottom: 0px;
 }
 .section2{
-    height: 400px;
+    height: fit-content;
     /* width: 95%; */
     /* margin-left: 2.5%; */
     width: 80%;
@@ -56,12 +69,12 @@ body{
     border-style: solid;
     border-width: 5px;
     overflow: hidden;
-    padding: 20px;
-    padding-bottom: 0px;
+    /* padding: 20px; */
+    /* padding-bottom: 0px; */
 }
 /* CAROUSEL */
 .section4{
-    height: 500px;
+    height: 25%;
     width: 100%;
     background-color: #777;
     /* border-color: #000000;
@@ -72,32 +85,70 @@ body{
     border-bottom: #000000 solid 5px;
     overflow: hidden;
 }
+
+/* .img_car{
+    width: 100%;
+    height: auto;
+}
 .carousel-item{
     height: 500px;
     background-color: #ffffff;
-    /* color: #000000; */
     columns: #000000;
     position: relative;
-    /* opacity: 0.5; */
-    background-position: center;
-    background-size: cover;
 }
 .container{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-    width: 80%;
-}
+    height: 100%;
+} */
 
 .card{
-    border: black solid 3px;
+    border: black solid 3px;   
 }
 
-/* @media (max-width: 952px){} */
-
-
+.img_sec2{
+    height: auto;
+    width: 100%;
+}
+@media (max-width: 400px) {
+    .body .txt{
+        font-size: small;
+    }
+    .body .title{
+        font-size: medium;
+    }
+    .card{
+        max-height: 350px;
+       
+    }
+    .card-body{
+        overflow-y: scroll;
+    }
+    .section2{
+        height: fit-content;
+        /* width: 95%; */
+        /* margin-left: 2.5%; */
+        width: 95%;
+        margin-left: 2.5%;
+        background-color: #ffffff;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 5px;
+        overflow: hidden;
+        /* padding: 20px; */
+        /* padding-bottom: 0px; */
+    }
+    .box{
+        height: 30px;
+    }
+  }
+  @media (max-width: 350px) {
+    .card{
+        max-height: 300px;
+       
+    }
+    .card-body{
+        overflow-y: scroll;
+    }
+  }
 
 /* AYA'S WORK */ 
 
@@ -123,7 +174,9 @@ body{
     border-color: black;
     background-color: #ffffff;
     width: 75%;
-    height: auto;
+    /* height: auto; */
+    max-height: 400px;
+    overflow-y: scroll;
     margin-top: 2%;
     /* border-radius: 20px;    CHAREF DELETED THIS */
     margin-left: 10%;
