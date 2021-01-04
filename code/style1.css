@@ -68,6 +68,8 @@ body{
     border-style: solid;
     border-width: 5px; */
     /* margin-left: 2.5%; */
+    border-top: #000000 solid 5px;
+    border-bottom: #000000 solid 5px;
     overflow: hidden;
 }
 .carousel-item{
