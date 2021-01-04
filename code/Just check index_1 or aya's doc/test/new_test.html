@@ -1,0 +1,87 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Local Hack Day OMC</title>
+        <meta name="Description" content="ADD A DESCRIPTION">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="new_test.css">
+    </head>
+    <body>
+        <div class="progress-bar">
+            <ul>
+                <!-- <li class="step step01 active"><div class="step-inner">step 1</div></li>
+                <li class="step step02"><div class="step-inner">step 2</div></li>
+                <li class="step step03"><div class="step-inner">step 3</div></li>
+                <li class="step step04"><div class="step-inner">step 4</div></li>
+                <li class="step step05"><div class="step-inner">step 5</div></li> -->
+                <li class="step step1"><a href="#" class="active">Step 1</a></li>
+                <li class="step step2"><a href="#">Step 1</a></li>
+                <li class="step step3"><a href="#">Step 1</a></li>
+                <li class="step step4"><a href="#">Step 1</a></li>
+                <li class="step step5"><a href="#">Step 1</a></li>
+            </ul>
+        </div>
+        <div id="progress-content-section">
+                        <div class="section-content step1 active">
+                            <h2>step 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                        </div>
+                        
+                        <div class="section-content step2">
+                            <h2>step 2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                        </div>
+                        
+                        <div class="section-content step3">
+                            <h2>step 3</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                        </div>
+                        
+                        <div class="section-content step4">
+                            <h2>step 4</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                        </div>
+                        
+                        <div class="section-content step5">
+                            <h2>step 5</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                        </div>
+                        </div>
+                    </div>
+
+        <script>
+            
+            $(".step").click( function() {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+        
+        $(".step01").click( function() {
+            // $("#line-progress").css("width", "3%");
+            $(".step1").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step02").click( function() {
+            // $("#line-progress").css("width", "25%");
+            $(".step2").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step03").click( function() {
+            // $("#line-progress").css("width", "50%");
+            $(".step3").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step04").click( function() {
+            // $("#line-progress").css("width", "75%");
+            $(".step4").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step05").click( function() {
+            // $("#line-progress").css("width", "100%");
+            $(".step5").addClass("active").siblings().removeClass("active");
+        });
+        
+         
+            </script>
+    </body>
+</html>
